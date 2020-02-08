@@ -11,13 +11,14 @@ class CategoryPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          
           RaisedButton(
-            child: Text('跳转之表单页面')
-            ,onPressed: () {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => FormPage(title: '跳转表单页面',)));
-          })
+              child: Text('跳转之表单页面'),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => FormPage(
+                          title: '跳转表单页面',
+                        )));
+              })
         ],
       ),
     );
