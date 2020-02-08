@@ -14,10 +14,13 @@ class CategoryPage extends StatelessWidget {
           RaisedButton(
               child: Text('跳转之表单页面'),
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => FormPage(
-                          title: '跳转表单页面',
-                        )));
+                //  基本跳转
+                // Navigator.of(context).push(MaterialPageRoute(
+                //     builder: (context) => FormPage(
+                //           title: '跳转表单页面',
+                //         )));
+                //  使用命名路由跳转
+                Navigator.pushNamed(context, '/form');
               })
         ],
       ),

@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'pages/Tabs.dart';
+import 'routes/Routes.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: MaterialApp(
-        title: 'tabs',
-        home: Tabs()
-      ),
+    return MaterialApp(
+      title: 'tabs',
+      // home: Tabs(),
+      initialRoute: '/',
+      //  配置路由
+      // routes: routes,
+      //  监听路由传值(需要将routes删掉)
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }
