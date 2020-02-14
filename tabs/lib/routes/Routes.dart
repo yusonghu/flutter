@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import '../pages/Tabs.dart';
 import '../pages/Form.dart';
 import '../pages/Search.dart';
-
+import '../pages/TabBarController.dart';
+import '../pages/User.dart';
 var routes = {
   '/': (context) => Tabs(),
   '/form': (context) => FormPage(),
-  '/search': (context, {arguments}) => SearchPage(arguments: arguments)
+  '/tabBar': (context) => TabBarControllerPage(),
+  '/search': (context, {arguments}) => SearchPage(arguments: arguments),
+  '/user':(context)=>UserPage(),
+  
 };
-
 
 //  可以当作固定写法
 var onGenerateRoute = (RouteSettings settings) {
