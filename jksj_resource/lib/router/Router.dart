@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
-import '../pages/Tabs.dart';
-import '../pages/Form.dart';
-import '../pages/Search.dart';
-import '../pages/TabBarController.dart';
-import '../pages/User.dart';
+import '../pages/home/Home.dart';
+import '../pages/list/ResourceList.dart';
+
 var routes = {
-  '/': (context) => Tabs(),
-  '/form': (context) => FormPage(),
-  '/tabBar': (context) => TabBarControllerPage(),
-  '/search': (context, {arguments}) => SearchPage(arguments: arguments),
-  '/user':(context)=>UserPage(),
-  
+  '/': (context) => HomePage(),
+  '/resourceList': (context)=>ResourceListPage()
 };
+
 
 //  可以当作固定写法
 var onGenerateRoute = (RouteSettings settings) {
